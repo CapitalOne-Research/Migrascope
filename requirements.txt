@@ -1,7 +1,40 @@
-hipporag
-numpy
-scikit-learn
-xgboost
-jsonlines
-rank-bm25
-lz4
+# Core Algorithms
+hipporag==2.0.0a3
+numpy>=1.24.0,<2.0.0
+scikit-learn==1.7.2
+xgboost==3.1.3
+rank-bm25>=0.2.2
+
+# File I/O & Data Processing
+jsonlines>=3.0.0
+lz4>=4.0.0
+pandas>=2.0.0
+
+# API Clients & Utilities
+openai>=1.0.0
+requests
+aiohttp
+tqdm
+matplotlib
+seaborn
+python-dotenv>=1.0.0
+
+# Required Dependencies (added)
+networkx>=3.0.0
+scipy>=1.10.0
+
+# =================================================================
+# OPTIONAL DEPENDENCIES
+# =================================================================
+
+# 1. Local Model Serving
+# Uncomment the following lines if you plan to host your own local 
+# LLM and embedding endpoints using vLLM on this machine:
+# vllm==0.10.2
+# fastapi==0.128.0
+# uvicorn==0.40.0
+
+# 2. Local Dense Embeddings
+# Uncomment if you are using the 'local' mode in RAG/QRAG initialization
+# which requires SentenceTransformers instead of a remote API:
+# sentence-transformers==5.2.2

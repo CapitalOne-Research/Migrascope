@@ -206,3 +206,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Logs
+logs/
+*.log
+
+# Benchmark Results
+results/
+results*
+
+# Outputs and checkpoints dirs
+out/
+retriever_ckpts/
